@@ -1,95 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mesto</title>
-</head>
-<body class="page">
+  </head>
+  <body class="page">
     <div class="page__container">
-        <header class="header page__centered">
-            <div class="header__logo"></div>
-            <div class="header__line"></div>
-        </header>
-        <section class="profile page__centered">
-            <div class="profile__avatar"></div>
-            <div class="profile__info">
-                <div class="profile__items">
-                    <h1 class="profile__username">Жак-Ив Кусто</h1>
-                    <button class="button button-edit" type="button"></button>
-    
-                </div>
-
-                <p class="profile__userjob">Исследователь океана</p>
+      <header class="header page__centered">
+        <div class="header__logo"></div>
+        <div class="header__line"></div>
+      </header>
+      <section class="profile page__centered">
+        <div class="profile__avatar"></div>
+        <div class="profile__info">
+          <div class="profile__items">
+            <h1 class="profile__username">Жак-Ив Кусто</h1>
+            <button class="button profile__edit-button" type="button"></button>
+          </div>
+          <p class="profile__userjob">Исследователь океана</p>
+        </div>
+        <button class="button profile__add-button" type="button"></button>
+      </section>
+      <section class="places page__centered">
+        <ul class="place">
+          <li class="place__item">
+            <img
+              src="./images/place-karachaevsk.jpg"
+              alt="Карачаевск"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Карачаево-Черкессия</p>
+              <div class="place__like-icon place__like-icon_active"></div>
             </div>
-            <button class="button button-add" type="button"></button>
-
-        </section>
-        <section class="places page__centered">
-            <div class="place">
-                <img src="./images/place-karachaevsk.jpg" alt="Карачаевск" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Карачаево-Черкессия</p>
-                    <div class="place__like-icon"></div>
-                </div>
+          </li>
+          <li class="place__item">
+            <img
+              src="./images/place-elbrus.jpg"
+              alt="Гора Эльбрус"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Гора Эльбрус</p>
+              <div class="place__like-icon"></div>
             </div>
-            <div class="place">
-                <img src="./images/place-elbrus.jpg" alt="Гора Эльбрус" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Гора Эльбрус</p>
-                    <div class="place__like-icon"></div>
-                </div>
+          </li>
+          <li class="place__item">
+            <img
+              src="./images/place-dombai.jpg"
+              alt="Домбай"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Домбай</p>
+              <div class="place__like-icon"></div>
             </div>
-            <div class="place">
-                <img src="./images/place-dombai.jpg" alt="Домбай" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Домбай</p>
-                    <div class="place__like-icon"></div>
-                </div>
+          </li>
+          <li class="place__item">
+            <img
+              src="./images/place-altay.jpg"
+              alt="Алтай"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Алтай</p>
+              <div class="place__like-icon"></div>
             </div>
-            <div class="place">
-                <img src="./images/place-altay.jpg" alt="Алтай" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Алтай</p>
-                    <div class="place__like-icon"></div>
-                </div>
+          </li>
+          <li class="place__item">
+            <img
+              src="./images/place-baltika.jpg"
+              alt="Балтика"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Балтика</p>
+              <div class="place__like-icon"></div>
             </div>
-            <div class="place">
-                <img src="./images/place-baltika.jpg" alt="Балтика" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Балтика</p>
-                    <div class="place__like-icon"></div>
-                </div>
+          </li>
+          <li class="place__item">
+            <img
+              src="./images/place-primorye.jpg"
+              alt="Приморье"
+              class="place__img"
+            />
+            <div class="place__description">
+              <p class="place__name">Приморье</p>
+              <div class="place__like-icon"></div>
             </div>
-            <div class="place">
-                <img src="./images/place-primorye.jpg" alt="Приморье" class="place__img">
-                <div class="place__description">
-                    <p class="place__name">Приморье</p>
-                    <div class="place__like-icon"></div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer page__centered">© 2020 Mesto Russia</footer>
+          </li>
+        </ul>
+      </section>
+      <footer class="footer page__centered">© 2020 Mesto Russia</footer>
     </div>
     <div class="popup">
-        <div class="popup__container">
-            <button type="button" class="popup__close-button button"></button>
-            <div class="popup__content">
-                <form action="" class="popup__form">
-                    <h2 class="popup__title">Редактировать профиль</h2>
-                    <fieldset class="popup__inputs">
-                        <label><input type="text" class="popup__input popup__input_name" placeholder="Имя"></label>
-                        <label><input type="text" class="popup__input popup__input_link" placeholder="О себе"></label>
-    
-                    </fieldset>
-                    <button type="button" class="popup__submit-button button">Сохранить</button>
-                </form>
-            </div>
+      <div class="popup__container">
+        <button type="button" class="popup__close-button button"></button>
+        <div class="popup__content">
+          <form class="popup__form" name="profile-edit-form">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <fieldset class="popup__inputs">
+              <label
+                ><input
+                  type="text"
+                  class="popup__input popup__input_name"
+                  placeholder="Имя"
+                  value="Жак-Ив Кусто"
+                  required
+              /></label>
+              <label
+                ><input
+                  type="text"
+                  class="popup__input popup__input_job"
+                  placeholder="О себе"
+                  value="Исследователь океана"
+                  required
+              /></label>
+            </fieldset>
+            <button type="submit" class="popup__submit-button button">
+              Сохранить
+            </button>
+          </form>
         </div>
+      </div>
     </div>
-    <script src="./index.js"></script>
-</body>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
