@@ -11,9 +11,9 @@ Javascript, HTML, CSS
 
 
 
-## Link
+## 🔗 Link
 
-[:link:](https://abljava.github.io/mesto/)
+[Mesto Project](https://abljava.github.io/Mesto/)
 
 
 ## Authors
