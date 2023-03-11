@@ -16,7 +16,7 @@ Javascript, HTML, CSS
 [Mesto Project](https://abljava.github.io/Mesto/)
 
 
-## Authors
+## Author
 
 [@abljava](https://www.github.com/abljava)
 

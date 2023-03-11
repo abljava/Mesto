@@ -4,7 +4,8 @@
   outline: 1px solid #fff;
   margin-left: 18px;
   background-image: url(../../../images/button-edit.svg);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: opacity 0.3s ease-in-out;
 }
 .profile__edit-button:hover {

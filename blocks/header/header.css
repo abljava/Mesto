@@ -1,6 +1,8 @@
 .header {
   padding-top: 45px;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+
 }
 @media screen and (max-width: 1080px) {
   .header {
@@ -10,5 +12,8 @@
 @media screen and (max-width: 600px) {
   .header {
     border-bottom: 1px solid #545454;
+    margin: 0;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
